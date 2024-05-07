@@ -3,14 +3,16 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div>
-      <div className="signin-container">
-        <div className="signin-header">
+      <div className="auth-container">
+        <div className="auth-header">
           <h1>SkillSync</h1>
         </div>
-        <div className="signin-body">
+        <div className="auth-body">
           <h2>Sign in form</h2>
-          <div className="signin-form">
-            <input type="email" placeholder="Email address" />
+          <div className="auth-form">
+            <input type="text" placeholder="Username" />
+            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Confirm email" />
             <div>
               <input type="password" placeholder="Password" />
               <input type="checkbox" />
@@ -24,7 +26,7 @@ export default function Page() {
             <button type="button">Register</button>
           </div>
         </div>
-        <div className="signin-footer">
+        <div className="auth-footer">
           <p>
             Already have an account? <Link href="/login">Log in!</Link>
           </p>
